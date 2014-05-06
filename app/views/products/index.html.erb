@@ -1,0 +1,8 @@
+We got here from the <%= params[:controller] %>controller,  <%= params[:action] %> action.
+
+
+<ul>
+<% @products.each do |product| %>
+ <li> Product name: <%= product.name %>, price: <%= product.price %></li>
+<% end %>
+</ul>

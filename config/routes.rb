@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # HTTP GET Request for a specific 
+  # product
+  get '/products/:id' => 'products#show'
+
+  # HTTP GET Request for the 
+  # Products Controller index action
+  get '/products', to: 'products#index'
+
+  # Generates all the routes for the Song
+  # resource
+  # resources :songs
+
+  # Manual put in two routes for the Song
+  # resource.
+  get '/songs/:id', to: 'songs#show'
+  get '/songs' => 'songs#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
