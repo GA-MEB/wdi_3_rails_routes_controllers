@@ -25,41 +25,41 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'dotenv-rails'
-gem 'time_difference'
+# gem 'dotenv-rails'
+# gem 'time_difference'
 
-group :production do
-  gem 'rails_12factor'
-end
+# group :production do
+#   gem 'rails_12factor'
+# end
 
 group :development do
-  # Add model attributes
-  gem 'annotate'
+  # # Add model attributes
+  # gem 'annotate'
 
-  # help to kill N+1 queries and unused eager loading
-  # https://github.com/flyerhzm/bullet. Needs config in development.rb
-  gem 'bullet'
+  # # help to kill N+1 queries and unused eager loading
+  # # https://github.com/flyerhzm/bullet. Needs config in development.rb
+  # gem 'bullet'
 
-  # https://github.com/plentz/lol_dba
-  # list columns that should be indexed
-  gem 'lol_dba'
+  # # https://github.com/plentz/lol_dba
+  # # list columns that should be indexed
+  # gem 'lol_dba'
 
-  gem 'rails_best_practices', require: false
+  # gem 'rails_best_practices', require: false
 
-  # Ruby/CLI: Automatic lossless reduction of all your images
-  gem 'smusher'
+  # # Ruby/CLI: Automatic lossless reduction of all your images
+  # gem 'smusher'
 end
 
 group :test do
-  gem 'faker'
-  gem 'chronic'
+#   gem 'faker'
+#  gem 'chronic'
 end
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'database_cleaner'
-  gem 'shoulda-matchers'
-  gem 'guard-rspec', require: false
+  # gem 'rspec-rails'
+  # gem 'database_cleaner'
+  # gem 'shoulda-matchers'
+  # gem 'guard-rspec', require: false
 
   gem 'pry-rails'
   gem 'pry-nav'
@@ -72,10 +72,10 @@ group :development, :test do
   # http://railscasts.com/episodes/402-better-errors-railspanel
   # FOR sublime text 3 MUST INSTALL sublime-url-protocol-mac, http://goo.gl/8KX1lb
   # http://goo.gl/8KX1lb
-  gem 'better_errors'
-  gem 'binding_of_caller'
+  # gem 'better_errors'
+  # gem 'binding_of_caller'
 
   # Show a rails panel in Chrome. Requires a Chrome extension.
   # https://github.com/dejan/rails_panel
-  gem 'meta_request'
+#   gem 'meta_request'
 end
